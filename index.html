@@ -192,38 +192,11 @@ h2::after {
 .passo i { font-size: 35px; margin-bottom: 12px; transition: transform 0.3s; }
 .passo:hover i { transform: scale(1.15); }
 
-/* Contato */
-#contato { background: #e8f5e9; }
-form {
-  display: grid;
-  gap: 15px;
-  width: 100%;
-  max-width: 500px;
-  margin-top: 20px;
-}
-input, textarea {
-  padding: 14px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-textarea { resize: vertical; }
-.btn {
-  background: linear-gradient(135deg, #1a3d2f, #28a745);
-  color: #fff;
-  padding: 14px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-.btn:hover { 
-  transform: scale(1.05); 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
 
-/* FOOTER */
+#pix { background: #e8f5e9; }
+#pix p { max-width: 600px; margin: 15px auto; font-size: 1.2em; line-height: 1.6; }
+
+
 footer {
   background: #1a3d2f;
   text-align: center;
@@ -232,7 +205,7 @@ footer {
   color: #ccc;
 }
 
-/* RESPONSIVO */
+
 @media(max-width: 768px) {
   .servico, .passo { width: 80%; }
 }
@@ -246,7 +219,7 @@ footer {
     <a href="#sobre">Sobre nós</a>
     <a href="#servicos">Serviços</a>
     <a href="#como">Como funciona</a>
-    <a href="#contato">Contato</a>
+    <a href="#pix">Pix</a>
   </nav>
 </header>
 
@@ -313,14 +286,22 @@ footer {
   </div>
 </section>
 
-<section id="contato" data-aos="fade-up">
-  <h2>Contato</h2>
-  <form>
-    <input type="text" placeholder="Nome" required>
-    <input type="email" placeholder="Email" required>
-    <textarea rows="5" placeholder="Mensagem" required></textarea>
-    <button type="submit" class="btn">Enviar</button>
-  </form>
+<section id="pix" data-aos="fade-up">
+  <h2>Apoie nosso projeto</h2>
+  <p>
+    Para manter o Smart Storage funcionando e ajudando produtores, você pode apoiar nosso trabalho 
+    com uma contribuição via <strong>Pix</strong>. Toda ajuda faz a diferença para manter a plataforma no ar!
+  </p>
+
+  <!-- Espaço para o QR Code -->
+  <div style="margin: 30px 0; text-align: center;">
+    <img src="qrcode.png" alt="QR Code Pix" style="width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
+  </div>
+
+  <!-- Email Pix -->
+  <p style="font-size: 1.1em; font-weight: 600; color: #1a3d2f; text-align: center;">
+    🔑 Chave Aleatória (Pix): <span style="color: #28a745;">7fe2449d-e60c-4005-a465-7c6969427267</span>
+  </p>
 </section>
 
 <footer data-aos="fade-up">
